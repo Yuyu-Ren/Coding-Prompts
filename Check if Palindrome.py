@@ -2,6 +2,7 @@ input = raw_input("Palindrome Checker: ")
 length = len(input)
 
 def checkpalindrome():
+    # type: () -> object
     secondCutDecrement = len(splitInput[1]) - 1
     for x in splitInput[0]:
         if x == splitInput[1][secondCutDecrement]:
@@ -25,4 +26,3 @@ else:
     length = len(input) / 2 # location of slice
     splitInput = input[:length], input[length + 1:]  # slice into two pieces, omitting the middle letter
     print checkpalindrome()
-
