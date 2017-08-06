@@ -1,9 +1,9 @@
-input = raw_input("Count Strings of: ")
+text = open("textFile.txt").read()
 
-inputList = input.split()
 
-wordCount = 0
-for x in inputList:
-    wordCount = wordCount+1
-
-print wordCount
+def counter(textFile):
+    wordCount = 0
+    for words in text.split():
+        wordCount = wordCount+1
+    return wordCount
+print counter(text)
